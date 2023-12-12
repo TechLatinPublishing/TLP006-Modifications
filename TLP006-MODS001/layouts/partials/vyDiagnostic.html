@@ -6,7 +6,8 @@
   <h1>vyDiagnostics here - from MODs</h1>
 
   <br />
-  {{ printf "%#v" $.title}}
+  {{/* {{ printf "%#v" $.title}} */}} {{ printf "%#v" .Site.Title }}
+
   <p>title: {{ .Title}}</p>
   <br />
   <p>environment: {{ .Params.environemnt }}</p>
