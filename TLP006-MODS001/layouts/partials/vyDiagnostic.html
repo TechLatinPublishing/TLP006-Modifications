@@ -8,13 +8,16 @@
   <br />
   {{/* {{ printf "%#v" $.title}} */}}
   <br />
-  {{ printf "xxTitle: %#v" .Site.Title }}
+  {{/* {{ printf "xxTitle: %#v" .Site.Title }} */}}
 
   <p>title: {{ .Site.Title }}</p>
   <br />
+  {{/*
   <p>environment: {{ .Params.Environment }}</p>
+  */}} {{/*
   <p>Environment 2: {{.Param "Environment"}}</p>
-  <p>Environment 3: {{.Param "environment"}}</p>
+  */}}
+  <p>Environment: {{.Param "environment"}}</p>
   <br />
 
   <br />
