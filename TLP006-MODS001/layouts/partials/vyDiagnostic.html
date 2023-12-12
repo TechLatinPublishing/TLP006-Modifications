@@ -12,7 +12,10 @@
 
   <p>title: {{ .Site.Title }}</p>
   <br />
-  <p>environment: {{ .Params.environment }}</p>
+  <p>environment: {{ .Params.Environment }}</p>
+  <p>Environment 2: {{.Param "Environment"}}</p>
+  <p>Environment 3: {{.Param "environment"}}</p>
+  <br />
 
   <br />
   <p>Type: {{ .Type}}</p>
