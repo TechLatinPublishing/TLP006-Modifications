@@ -3,11 +3,13 @@
 <div class="well">
   <title>{{ .Params.title }} | {{ .Site.title }}</title>
   <br />
-  <h1>vyDiagnostics here</h1>
+  <h1>vyDiagnostics here - from MODs</h1>
 
   <br />
   {{ printf "%#v" $.title}}
   <p>title: {{ .Title}}</p>
+  <br />
+  {{ .Params.environemnt }}
 
   <br />
   <p>Type: {{ .Type}}</p>
